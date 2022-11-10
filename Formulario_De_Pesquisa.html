@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Entrevista</title>
+</head>
+<body>
+    <h1 id="title">Entrevista</h1>
+    <p id="description">Bem vindo a empresta H!<br>Adicione suas informações.</br></p>
+    <form action="https://register-demo.freecodecamp.org" method="post" id="survey-form">
+        <fieldset>
+            <label for="name-label">Insira seu nome: <input id="name"  name="nome" type="text" placeholder="Luis.."/></label>
+            <label for="number-label">Qual sua idade: <input id="number" name="numero" type="number" min="13" max="102"  pattern="[a-z0-5]{8,}" placeholder="15" required/></label>
+            <label for="email-label">insira seu email<input id="email" name="email" type="email" placeholder="Luis@gmail.." required/></label>
+        </fieldset>
+        <fieldset>
+            <label for="">Masculino: <input type="radio" value="radio" name="sexo"></label>
+            <label for="">Feminino: <input type="radio" value="radio" name="sexo"></label>
+             <label for="msg">Como nos conheceu</label>   
+                <select name="dropdown" id="dropdown">
+                <option value="">Site</option>
+                <option value="1">Tve</option>
+                <option value="2">Outros</option>
+            </select>
+            <label for="">Diga Mais sobre você, sobre seus sonhos e o que almeja:</label>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Me chamo ..."></textarea>
+        </fieldset> 
+     <label for="submit"><input type="submit" id="submit"></label>
+    </form>
+</body>
+</html>
